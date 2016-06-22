@@ -2,7 +2,7 @@
 <aside>
  	<div class="block">
  		<h1 class="blocktitle">Вход</h1>
- 		<div class="blockcontent">
+ 		<div class="blockcontent">Вход</h1>
 			<div class="signin">
 			Имя пользователя: <input id="signlog" type="text" name="login"><br />
 			Пароль: <input id="signpass" type="password" name="pass"><br />
