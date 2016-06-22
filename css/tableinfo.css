@@ -1,0 +1,40 @@
+.info {
+	width: 100%;
+	border: 1px solid #5A5454;
+}
+
+.name {
+	font-size: 14;
+	padding: 10px;
+	background: #5a5454;
+	color: #fff;
+	font-family: 'Fira Sans';
+}
+
+.har{
+	font-size: 12;
+	width: 220px;
+	padding: 5px;
+	font-family: 'Fira Sans';
+	border-right: 1px solid #dcdcdc;
+	font-weight:bold;
+}
+
+.har2 {
+	font-size: 12;
+	width: 220px;
+	padding: 5px;
+	font-family: 'Fira Sans';
+}
+
+.nav {
+	font-size: 12;
+	width: 100%;
+	padding: 10px;
+	background: linear-gradient(to top, #333333, #5A5454);
+	border-radius: 5px;
+	font-family: 'Fira Sans';
+}
+
+
+
