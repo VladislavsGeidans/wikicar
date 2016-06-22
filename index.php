@@ -38,6 +38,18 @@ if(isset($_POST['submit']))
 					include "global/header.html";
  				?>
 
+ 				<div class="imgindex">
+ 					<div class="imgtext">
+						<div class="ftext">
+							WikiCar - всё о авто!
+						</div>
+
+						<div class="stext">
+							Здесь вы найдете все авто, которые вас интересуют
+						</div>
+					</div>
+				</div>
+
 
  				<div class="content-wrap">
 					<section>
@@ -76,22 +88,19 @@ if(isset($_POST['submit']))
 						
 						
 						
- 						</div>
-					</section>
-
- 					<?php 
- 						include "global/container.php";
- 					?>
-					
+ 						</div><br><br><br><br>
+ 								<?php 
+ 									include "global/footer.html";
+ 								?>
+					</section>			
  				</div>
 				
 			
 				
 			</div>
 	</div>
-				<?php
-			include "global/footer.html";
-		?>	
+</div>
+
 </body>
 
 </html>
