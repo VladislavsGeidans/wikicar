@@ -24,7 +24,6 @@ include ("/../includes/connect.php");
 			{
 				echo '<div class="name_news">'.$row['name'].'</div><br>';
 				echo '<div class="body_news">'.$row['body'].'</div><br><br>';
-				echo '<a href="index.php?page=news"><img src="img/back.png" width="30"></a>';
 			}
 		}
 	}
