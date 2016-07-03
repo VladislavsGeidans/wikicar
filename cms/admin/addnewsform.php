@@ -1,13 +1,7 @@
+<meta charset="utf-8">
 <?php
-  ///////////////////////////////////////////////////
-  // Блок "Новости"
-  // 2003-2006 (C) IT-студия SoftTime (http://www.softtime.ru)
-  // Симдянов И.В. (simdyanov@softtime.ru)
-  // Голышев С.В. (softtime@softtime.ru)
-  ///////////////////////////////////////////////////
-  // Выставляем уровень обработки ошибок (http://www.softtime.ru/info/articlephp.php?id_article=23)
+
   Error_Reporting(E_ALL & ~E_NOTICE); 
-  date_default_timezone_set(‘UTC’);
 
   if($titlepage == "") $titlepage = "Добавление новости";
   $helppage='Для добавления новости заполните обязательные поля: "<b>Название</b>" и "<b>Содержание</b>". Нажмите кнопку "Добавить".<br> 
@@ -33,11 +27,11 @@
     $url = "";
     $url_text = "";
     $url_pict = "";
-    $date_month = date("M");
-    $date_day = date("D");
+    $date_month = date("m");
+    $date_day = date("d");
     $date_year = date("Y");
     $date_hour = date("H");
-    $date_minute = date("I");
+    $date_minute = date("i");
   }
 ?>
 <table><tr><td>
@@ -161,7 +155,6 @@
 <!-- 
   function freeze_filename(form) 
   { 
-
     form.filename.disabled = !form.chk_filename.checked; 
   } 
   function freeze_rename(form) 

@@ -1,5 +1,6 @@
 <html>
 <head>
+<title>Новости - WikiCar</title>
 <link rel="stylesheet" type="text/css" href="css/tableinfo.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <style>
@@ -22,7 +23,8 @@ include ("/../includes/connect.php");
 			while ($row = mysqli_fetch_assoc($result)) 
 			{
 				echo '<div class="name_news">'.$row['name'].'</div><br>';
-				echo '<div class="body_news">'.$row['body'].'</div>';
+				echo '<div class="body_news">'.$row['body'].'</div><br><br>';
+				echo '<a href="index.php?page=news"><img src="img/back.png" width="30"></a>';
 			}
 		}
 	}
@@ -62,41 +64,38 @@ include ("/../includes/connect.php");
 								else if ($simbol > $numchar)
 								{
 									echo "<p class=newsblock>".substr($row["body"], 0, $numchar)."";
-									echo "<a href=index.php?page=news&id_news=".$row['id_news']."><text> [ Подробнее... ]</text></a></p>";
+									echo " ...</p>";
 								}
 				echo '
 							</td>
-						</tr>
-						<tr> 
-							<td style="float: right; border-bottom: 0px solid #CDAF95;">
-								'.$row['putdate'].'
-							</td>
 						</tr>							
 					</table>
-					<br>
+					<br><br><br>
 				';
 					}
+
+					echo '<div class="newslinkblock">';
+				
+						$count = 10;
+						$querys = "SELECT * FROM news";
+						if ($results = mysqli_query($link, $querys)) 
+						{
+							$i = 7;
+							while ($rows = mysqli_fetch_assoc($results)) 
+							{
+					   			$i++;
+							}
+						}
+						$i = intval($i / $count);
+						for ($d = 1; $d <= $i; $d++) 
+						{
+					   		echo "<a class='newslink' href='index.php?page=news&pages=".$d."'>".$d."</a><span> </span>";
+					   	}
+
+				echo '</div>';
 				}				
 	}	
 ?>
-<div class='newslinkblock'>
-<?php
-$count = 10;
-	$querys = "SELECT * FROM news";
-	if ($results = mysqli_query($link, $querys)) 
-	{
-		$i =0;
-		while ($rows = mysqli_fetch_assoc($results)) 
-		{
-   			$i++;
-		}
-	}
-	$i = intval($i / $count);
-	for ($d = 1; $d <= $i; $d++) 
-	{
-   		echo "<a class='newslink' href='index.php?page=news&pages=".$d."'>".$d."</a><span> </span>";
-   	}
-?>
-</div>
+
 </body>
 </html>

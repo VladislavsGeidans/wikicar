@@ -1,16 +1,9 @@
 <?php
-  ///////////////////////////////////////////////////
-  // Ѓ«®Є "Ќ®ў®бвЁ"
-  // 2003-2006 (C) IT-бвг¤Ёп SoftTime (http://www.softtime.ru)
-  // ‘Ё¬¤п­®ў €.‚. (simdyanov@softtime.ru)
-  // ѓ®«лиҐў ‘.‚. (softtime@softtime.ru)
-  ///////////////////////////////////////////////////
-  // ‚лбв ў«пҐ¬ га®ўҐ­м ®Ўа Ў®вЄЁ ®иЁЎ®Є (http://www.softtime.ru/info/articlephp.php?id_article=23)
   Error_Reporting(E_ALL & ~E_NOTICE); 
 ?>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 <title><?php echo $titlepage; ?></title>
 <?
     if (!isset($style)) {
@@ -25,9 +18,9 @@
 <table class=topadmin border="0" cellspacing="9">
     <tr align="center">
         <td width="10%">&nbsp;</td>
-        <td><p><a href="../../company/index.php" class=link title="Вернуться на головную страницу сайта" >Вернутся на сайт</b></a></td>
+        <td><p><a href="../../company/index.php" class=link title="Вернуться на головную страницу сайта" >Вернуться на сайт</b></a></td>
         <td width="50">&nbsp;</td>
-        <td><p><a href="../index.php" class=link title="Вернутся на страницу администрирования сайта">Администрирование сайта</b></a></td>
+        <td><p><a href="../index.php" class=link title="Вернуться на страницу администрированию сайта">Администрирование сайта</b></a></td>
         <td width="50">&nbsp;</td>
     </tr>
 </table>

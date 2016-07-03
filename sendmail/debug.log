@@ -1,0 +1,288 @@
+16.07.03 20:58:40 ** --- MESSAGE BEGIN ---
+16.07.03 20:58:40 ** To: vladislavsgeidans@inbox.lv
+16.07.03 20:58:40 ** Subject: Тема: laksjdfalskdf || E-Mail: asdfbasdjf
+16.07.03 20:58:40 ** X-PHP-Originating-Script: 0:support.php
+16.07.03 20:58:40 ** From: pisalka30@gmail.com
+16.07.03 20:58:40 ** Reply-To: pisalka30@gmail.com
+16.07.03 20:58:40 ** MIME-Version: 1.0
+16.07.03 20:58:40 ** Content-type: text/html; charset=iso-8859-1
+16.07.03 20:58:40 ** X-Mailer: PHP/5.5.34
+16.07.03 20:58:40 ** 
+16.07.03 20:58:40 ** 
+16.07.03 20:58:40 ** --- MESSAGE END ---
+16.07.03 20:58:41 ** Connecting to smtp.gmail.com:465
+16.07.03 20:58:42 ** Connected.
+16.07.03 20:58:42 << 220 smtp.gmail.com ESMTP 25sm1670208lft.24 - gsmtp<EOL>
+16.07.03 20:58:42 >> EHLO localhost<EOL>
+16.07.03 20:58:42 << 250-smtp.gmail.com at your service, [62.205.239.246]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+16.07.03 20:58:42 ** Authenticating as pisalka30@gmail.com
+16.07.03 20:58:42 >> AUTH LOGIN<EOL>
+16.07.03 20:58:42 << 334 VXNlcm5hbWU6<EOL>
+16.07.03 20:58:42 >> cGlzYWxrYTMwQGdtYWlsLmNvbQ==<EOL>
+16.07.03 20:58:42 << 334 UGFzc3dvcmQ6<EOL>
+16.07.03 20:58:42 >> VmE1cHJpZWthMTIz<EOL>
+16.07.03 20:58:42 << 235 2.7.0 Accepted<EOL>
+16.07.03 20:58:42 >> MAIL FROM: <pisalka30@gmail.com><EOL>
+16.07.03 20:58:42 << 250 2.1.0 OK 25sm1670208lft.24 - gsmtp<EOL>
+16.07.03 20:58:42 >> RCPT TO: <vladislavsgeidans@inbox.lv><EOL>
+16.07.03 20:58:42 << 250 2.1.5 OK 25sm1670208lft.24 - gsmtp<EOL>
+16.07.03 20:58:42 >> DATA<EOL>
+16.07.03 20:58:42 << 354  Go ahead 25sm1670208lft.24 - gsmtp<EOL>
+16.07.03 20:58:42 >> Date: Sun, 3 Jul 2016 20:58:42 +0300<EOL>
+16.07.03 20:58:42 >> To: vladislavsgeidans@inbox.lv<EOL>
+16.07.03 20:58:42 >> Subject: Тема: laksjdfalskdf || E-Mail: asdfbasdjf<EOL>
+16.07.03 20:58:42 >> X-PHP-Originating-Script: 0:support.php<EOL>
+16.07.03 20:58:42 >> From: pisalka30@gmail.com<EOL>
+16.07.03 20:58:42 >> Reply-To: pisalka30@gmail.com<EOL>
+16.07.03 20:58:42 >> MIME-Version: 1.0<EOL>
+16.07.03 20:58:42 >> Content-type: text/html; charset=iso-8859-1<EOL>
+16.07.03 20:58:42 >> X-Mailer: PHP/5.5.34<EOL>
+16.07.03 20:58:42 >> <EOL>
+16.07.03 20:58:42 >> <EOL>
+16.07.03 20:58:42 >> .<EOL>
+16.07.03 20:58:43 << 250 2.0.0 OK 1467568723 25sm1670208lft.24 - gsmtp<EOL>
+16.07.03 20:58:43 >> QUIT<EOL>
+16.07.03 20:58:43 << 221 2.0.0 closing connection 25sm1670208lft.24 - gsmtp<EOL>
+16.07.03 20:58:43 ** Disconnecting from smtp.gmail.com:465
+16.07.03 20:58:43 ** Disconnected.
+16.07.03 20:58:43 ** Disconnected.
+16.07.03 21:05:30 ** --- MESSAGE BEGIN ---
+16.07.03 21:05:30 ** To: vladislavsgeidans@inbox.lv
+16.07.03 21:05:30 ** Subject: Temats: TestTemats1 || E-Mail: TestMail1
+16.07.03 21:05:30 ** X-PHP-Originating-Script: 0:support.php
+16.07.03 21:05:30 ** From: pisalka30@gmail.com
+16.07.03 21:05:30 ** Reply-To: pisalka30@gmail.com
+16.07.03 21:05:30 ** MIME-Version: 1.0
+16.07.03 21:05:30 ** Content-type: text/html; charset=iso-8859-1
+16.07.03 21:05:30 ** X-Mailer: PHP/5.5.34
+16.07.03 21:05:30 ** 
+16.07.03 21:05:30 ** 
+16.07.03 21:05:30 ** --- MESSAGE END ---
+16.07.03 21:05:30 ** Connecting to smtp.gmail.com:465
+16.07.03 21:05:31 ** Connected.
+16.07.03 21:05:31 << 220 smtp.gmail.com ESMTP d187sm911664lfe.15 - gsmtp<EOL>
+16.07.03 21:05:31 >> EHLO localhost<EOL>
+16.07.03 21:05:31 << 250-smtp.gmail.com at your service, [62.205.239.246]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+16.07.03 21:05:31 ** Authenticating as pisalka30@gmail.com
+16.07.03 21:05:31 >> AUTH LOGIN<EOL>
+16.07.03 21:05:31 << 334 VXNlcm5hbWU6<EOL>
+16.07.03 21:05:31 >> cGlzYWxrYTMwQGdtYWlsLmNvbQ==<EOL>
+16.07.03 21:05:31 << 334 UGFzc3dvcmQ6<EOL>
+16.07.03 21:05:31 >> VmE1cHJpZWthMTIz<EOL>
+16.07.03 21:05:31 << 235 2.7.0 Accepted<EOL>
+16.07.03 21:05:31 >> MAIL FROM: <pisalka30@gmail.com><EOL>
+16.07.03 21:05:31 << 250 2.1.0 OK d187sm911664lfe.15 - gsmtp<EOL>
+16.07.03 21:05:31 >> RCPT TO: <vladislavsgeidans@inbox.lv><EOL>
+16.07.03 21:05:31 << 250 2.1.5 OK d187sm911664lfe.15 - gsmtp<EOL>
+16.07.03 21:05:31 >> DATA<EOL>
+16.07.03 21:05:31 << 354  Go ahead d187sm911664lfe.15 - gsmtp<EOL>
+16.07.03 21:05:31 >> Date: Sun, 3 Jul 2016 21:05:31 +0300<EOL>
+16.07.03 21:05:31 >> To: vladislavsgeidans@inbox.lv<EOL>
+16.07.03 21:05:31 >> Subject: Temats: TestTemats1 || E-Mail: TestMail1<EOL>
+16.07.03 21:05:31 >> X-PHP-Originating-Script: 0:support.php<EOL>
+16.07.03 21:05:31 >> From: pisalka30@gmail.com<EOL>
+16.07.03 21:05:31 >> Reply-To: pisalka30@gmail.com<EOL>
+16.07.03 21:05:31 >> MIME-Version: 1.0<EOL>
+16.07.03 21:05:31 >> Content-type: text/html; charset=iso-8859-1<EOL>
+16.07.03 21:05:31 >> X-Mailer: PHP/5.5.34<EOL>
+16.07.03 21:05:31 >> <EOL>
+16.07.03 21:05:31 >> <EOL>
+16.07.03 21:05:31 >> .<EOL>
+16.07.03 21:05:32 << 250 2.0.0 OK 1467569132 d187sm911664lfe.15 - gsmtp<EOL>
+16.07.03 21:05:32 >> QUIT<EOL>
+16.07.03 21:05:32 << 221 2.0.0 closing connection d187sm911664lfe.15 - gsmtp<EOL>
+16.07.03 21:05:32 ** Disconnected.
+16.07.03 21:05:32 ** Disconnected.
+16.07.03 21:05:32 ** Disconnected.
+16.07.03 21:06:18 ** --- MESSAGE BEGIN ---
+16.07.03 21:06:18 ** To: vladislavsgeidans@inbox.lv
+16.07.03 21:06:18 ** Subject: Temats:  || E-Mail: TestMail2
+16.07.03 21:06:18 ** X-PHP-Originating-Script: 0:support.php
+16.07.03 21:06:18 ** From: pisalka30@gmail.com
+16.07.03 21:06:18 ** Reply-To: pisalka30@gmail.com
+16.07.03 21:06:18 ** MIME-Version: 1.0
+16.07.03 21:06:18 ** Content-type: text/html; charset=iso-8859-1
+16.07.03 21:06:18 ** X-Mailer: PHP/5.5.34
+16.07.03 21:06:18 ** 
+16.07.03 21:06:18 ** 
+16.07.03 21:06:18 ** --- MESSAGE END ---
+16.07.03 21:06:18 ** Connecting to smtp.gmail.com:465
+16.07.03 21:06:18 ** Connected.
+16.07.03 21:06:18 << 220 smtp.gmail.com ESMTP f41sm4003317lji.19 - gsmtp<EOL>
+16.07.03 21:06:18 >> EHLO localhost<EOL>
+16.07.03 21:06:18 << 250-smtp.gmail.com at your service, [62.205.239.246]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+16.07.03 21:06:18 ** Authenticating as pisalka30@gmail.com
+16.07.03 21:06:18 >> AUTH LOGIN<EOL>
+16.07.03 21:06:18 << 334 VXNlcm5hbWU6<EOL>
+16.07.03 21:06:18 >> cGlzYWxrYTMwQGdtYWlsLmNvbQ==<EOL>
+16.07.03 21:06:19 << 334 UGFzc3dvcmQ6<EOL>
+16.07.03 21:06:19 >> VmE1cHJpZWthMTIz<EOL>
+16.07.03 21:06:19 << 235 2.7.0 Accepted<EOL>
+16.07.03 21:06:19 >> MAIL FROM: <pisalka30@gmail.com><EOL>
+16.07.03 21:06:19 << 250 2.1.0 OK f41sm4003317lji.19 - gsmtp<EOL>
+16.07.03 21:06:19 >> RCPT TO: <vladislavsgeidans@inbox.lv><EOL>
+16.07.03 21:06:19 << 250 2.1.5 OK f41sm4003317lji.19 - gsmtp<EOL>
+16.07.03 21:06:19 >> DATA<EOL>
+16.07.03 21:06:19 << 354  Go ahead f41sm4003317lji.19 - gsmtp<EOL>
+16.07.03 21:06:19 >> Date: Sun, 3 Jul 2016 21:06:19 +0300<EOL>
+16.07.03 21:06:19 >> To: vladislavsgeidans@inbox.lv<EOL>
+16.07.03 21:06:19 >> Subject: Temats:  || E-Mail: TestMail2<EOL>
+16.07.03 21:06:19 >> X-PHP-Originating-Script: 0:support.php<EOL>
+16.07.03 21:06:19 >> From: pisalka30@gmail.com<EOL>
+16.07.03 21:06:19 >> Reply-To: pisalka30@gmail.com<EOL>
+16.07.03 21:06:19 >> MIME-Version: 1.0<EOL>
+16.07.03 21:06:19 >> Content-type: text/html; charset=iso-8859-1<EOL>
+16.07.03 21:06:19 >> X-Mailer: PHP/5.5.34<EOL>
+16.07.03 21:06:19 >> <EOL>
+16.07.03 21:06:19 >> <EOL>
+16.07.03 21:06:19 >> .<EOL>
+16.07.03 21:06:20 << 250 2.0.0 OK 1467569180 f41sm4003317lji.19 - gsmtp<EOL>
+16.07.03 21:06:20 >> QUIT<EOL>
+16.07.03 21:06:20 << 221 2.0.0 closing connection f41sm4003317lji.19 - gsmtp<EOL>
+16.07.03 21:06:20 ** Disconnecting from smtp.gmail.com:465
+16.07.03 21:06:20 ** Disconnected.
+16.07.03 21:06:20 ** Disconnected.
+16.07.03 21:06:42 ** --- MESSAGE BEGIN ---
+16.07.03 21:06:42 ** To: vladislavsgeidans@inbox.lv
+16.07.03 21:06:42 ** Subject: Temats: TestTemats4 || E-Mail: TestMail3
+16.07.03 21:06:42 ** X-PHP-Originating-Script: 0:support.php
+16.07.03 21:06:42 ** From: pisalka30@gmail.com
+16.07.03 21:06:42 ** Reply-To: pisalka30@gmail.com
+16.07.03 21:06:42 ** MIME-Version: 1.0
+16.07.03 21:06:42 ** Content-type: text/html; charset=iso-8859-1
+16.07.03 21:06:42 ** X-Mailer: PHP/5.5.34
+16.07.03 21:06:42 ** 
+16.07.03 21:06:42 ** asdfasdgasdg
+16.07.03 21:06:42 ** --- MESSAGE END ---
+16.07.03 21:06:43 ** Connecting to smtp.gmail.com:465
+16.07.03 21:06:43 ** Connected.
+16.07.03 21:06:43 << 220 smtp.gmail.com ESMTP f41sm4003556lji.19 - gsmtp<EOL>
+16.07.03 21:06:43 >> EHLO localhost<EOL>
+16.07.03 21:06:43 << 250-smtp.gmail.com at your service, [62.205.239.246]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+16.07.03 21:06:43 ** Authenticating as pisalka30@gmail.com
+16.07.03 21:06:43 >> AUTH LOGIN<EOL>
+16.07.03 21:06:43 << 334 VXNlcm5hbWU6<EOL>
+16.07.03 21:06:43 >> cGlzYWxrYTMwQGdtYWlsLmNvbQ==<EOL>
+16.07.03 21:06:43 << 334 UGFzc3dvcmQ6<EOL>
+16.07.03 21:06:43 >> VmE1cHJpZWthMTIz<EOL>
+16.07.03 21:06:43 << 235 2.7.0 Accepted<EOL>
+16.07.03 21:06:43 >> MAIL FROM: <pisalka30@gmail.com><EOL>
+16.07.03 21:06:43 << 250 2.1.0 OK f41sm4003556lji.19 - gsmtp<EOL>
+16.07.03 21:06:43 >> RCPT TO: <vladislavsgeidans@inbox.lv><EOL>
+16.07.03 21:06:43 << 250 2.1.5 OK f41sm4003556lji.19 - gsmtp<EOL>
+16.07.03 21:06:43 >> DATA<EOL>
+16.07.03 21:06:43 << 354  Go ahead f41sm4003556lji.19 - gsmtp<EOL>
+16.07.03 21:06:43 >> Date: Sun, 3 Jul 2016 21:06:43 +0300<EOL>
+16.07.03 21:06:43 >> To: vladislavsgeidans@inbox.lv<EOL>
+16.07.03 21:06:43 >> Subject: Temats: TestTemats4 || E-Mail: TestMail3<EOL>
+16.07.03 21:06:43 >> X-PHP-Originating-Script: 0:support.php<EOL>
+16.07.03 21:06:43 >> From: pisalka30@gmail.com<EOL>
+16.07.03 21:06:43 >> Reply-To: pisalka30@gmail.com<EOL>
+16.07.03 21:06:43 >> MIME-Version: 1.0<EOL>
+16.07.03 21:06:43 >> Content-type: text/html; charset=iso-8859-1<EOL>
+16.07.03 21:06:43 >> X-Mailer: PHP/5.5.34<EOL>
+16.07.03 21:06:43 >> <EOL>
+16.07.03 21:06:43 >> asdfasdgasdg<EOL>
+16.07.03 21:06:43 >> .<EOL>
+16.07.03 21:06:44 << 250 2.0.0 OK 1467569205 f41sm4003556lji.19 - gsmtp<EOL>
+16.07.03 21:06:44 >> QUIT<EOL>
+16.07.03 21:06:44 << 221 2.0.0 closing connection f41sm4003556lji.19 - gsmtp<EOL>
+16.07.03 21:06:44 ** Disconnected.
+16.07.03 21:06:44 ** Disconnected.
+16.07.03 21:06:44 ** Disconnected.
+16.07.03 21:09:09 ** --- MESSAGE BEGIN ---
+16.07.03 21:09:09 ** To: vladislavsgeidans@inbox.lv
+16.07.03 21:09:09 ** Subject: Temats: TestTemats4 || E-Mail: TestMail4
+16.07.03 21:09:09 ** X-PHP-Originating-Script: 0:support.php
+16.07.03 21:09:09 ** From: pisalka30@gmail.com
+16.07.03 21:09:09 ** Reply-To: pisalka30@gmail.com
+16.07.03 21:09:09 ** MIME-Version: 1.0
+16.07.03 21:09:09 ** Content-type: text/html; charset=iso-8859-1
+16.07.03 21:09:09 ** X-Mailer: PHP/5.5.34
+16.07.03 21:09:09 ** 
+16.07.03 21:09:09 ** <p style="text-align: center;"><em><strong>ПИСЬМО ОТПРАВЛЕНО!</strong></em></p>
+16.07.03 21:09:09 ** --- MESSAGE END ---
+16.07.03 21:09:09 ** Connecting to smtp.gmail.com:465
+16.07.03 21:09:10 ** Connected.
+16.07.03 21:09:10 << 220 smtp.gmail.com ESMTP e195sm1017186lfg.13 - gsmtp<EOL>
+16.07.03 21:09:10 >> EHLO localhost<EOL>
+16.07.03 21:09:10 << 250-smtp.gmail.com at your service, [62.205.239.246]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+16.07.03 21:09:10 ** Authenticating as pisalka30@gmail.com
+16.07.03 21:09:10 >> AUTH LOGIN<EOL>
+16.07.03 21:09:10 << 334 VXNlcm5hbWU6<EOL>
+16.07.03 21:09:10 >> cGlzYWxrYTMwQGdtYWlsLmNvbQ==<EOL>
+16.07.03 21:09:10 << 334 UGFzc3dvcmQ6<EOL>
+16.07.03 21:09:10 >> VmE1cHJpZWthMTIz<EOL>
+16.07.03 21:09:10 << 235 2.7.0 Accepted<EOL>
+16.07.03 21:09:10 >> MAIL FROM: <pisalka30@gmail.com><EOL>
+16.07.03 21:09:10 << 250 2.1.0 OK e195sm1017186lfg.13 - gsmtp<EOL>
+16.07.03 21:09:10 >> RCPT TO: <vladislavsgeidans@inbox.lv><EOL>
+16.07.03 21:09:10 << 250 2.1.5 OK e195sm1017186lfg.13 - gsmtp<EOL>
+16.07.03 21:09:10 >> DATA<EOL>
+16.07.03 21:09:10 << 354  Go ahead e195sm1017186lfg.13 - gsmtp<EOL>
+16.07.03 21:09:10 >> Date: Sun, 3 Jul 2016 21:09:10 +0300<EOL>
+16.07.03 21:09:10 >> To: vladislavsgeidans@inbox.lv<EOL>
+16.07.03 21:09:10 >> Subject: Temats: TestTemats4 || E-Mail: TestMail4<EOL>
+16.07.03 21:09:10 >> X-PHP-Originating-Script: 0:support.php<EOL>
+16.07.03 21:09:10 >> From: pisalka30@gmail.com<EOL>
+16.07.03 21:09:10 >> Reply-To: pisalka30@gmail.com<EOL>
+16.07.03 21:09:10 >> MIME-Version: 1.0<EOL>
+16.07.03 21:09:10 >> Content-type: text/html; charset=iso-8859-1<EOL>
+16.07.03 21:09:10 >> X-Mailer: PHP/5.5.34<EOL>
+16.07.03 21:09:10 >> <EOL>
+16.07.03 21:09:10 >> <p style="text-align: center;"><em><strong>ПИСЬМО ОТПРАВЛЕНО!</strong></em></p><EOL>
+16.07.03 21:09:10 >> .<EOL>
+16.07.03 21:09:11 << 250 2.0.0 OK 1467569352 e195sm1017186lfg.13 - gsmtp<EOL>
+16.07.03 21:09:11 >> QUIT<EOL>
+16.07.03 21:09:11 << 221 2.0.0 closing connection e195sm1017186lfg.13 - gsmtp<EOL>
+16.07.03 21:09:11 ** Disconnecting from smtp.gmail.com:465
+16.07.03 21:09:11 ** Disconnected.
+16.07.03 21:09:11 ** Disconnected.
+16.07.03 21:10:28 ** --- MESSAGE BEGIN ---
+16.07.03 21:10:28 ** To: vladislavsgeidans@inbox.lv
+16.07.03 21:10:28 ** Subject: Temats: пылждвоатпдлывотпдлоывап || E-Mail: офаырвадлофытвадлофтыва
+16.07.03 21:10:28 ** X-PHP-Originating-Script: 0:support.php
+16.07.03 21:10:28 ** From: pisalka30@gmail.com
+16.07.03 21:10:28 ** Reply-To: pisalka30@gmail.com
+16.07.03 21:10:28 ** MIME-Version: 1.0
+16.07.03 21:10:28 ** Content-type: text/html; charset=iso-8859-1
+16.07.03 21:10:28 ** X-Mailer: PHP/5.5.34
+16.07.03 21:10:28 ** 
+16.07.03 21:10:28 ** <p style="text-align: center;"><em><strong>ылвджаоптывлоаптдылвоатпывап</strong></em></p>
+16.07.03 21:10:28 ** --- MESSAGE END ---
+16.07.03 21:10:28 ** Connecting to smtp.gmail.com:465
+16.07.03 21:10:29 ** Connected.
+16.07.03 21:10:29 << 220 smtp.gmail.com ESMTP o7sm4041037lfg.45 - gsmtp<EOL>
+16.07.03 21:10:29 >> EHLO localhost<EOL>
+16.07.03 21:10:29 << 250-smtp.gmail.com at your service, [62.205.239.246]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+16.07.03 21:10:29 ** Authenticating as pisalka30@gmail.com
+16.07.03 21:10:29 >> AUTH LOGIN<EOL>
+16.07.03 21:10:29 << 334 VXNlcm5hbWU6<EOL>
+16.07.03 21:10:29 >> cGlzYWxrYTMwQGdtYWlsLmNvbQ==<EOL>
+16.07.03 21:10:29 << 334 UGFzc3dvcmQ6<EOL>
+16.07.03 21:10:29 >> VmE1cHJpZWthMTIz<EOL>
+16.07.03 21:10:29 << 235 2.7.0 Accepted<EOL>
+16.07.03 21:10:29 >> MAIL FROM: <pisalka30@gmail.com><EOL>
+16.07.03 21:10:29 << 250 2.1.0 OK o7sm4041037lfg.45 - gsmtp<EOL>
+16.07.03 21:10:29 >> RCPT TO: <vladislavsgeidans@inbox.lv><EOL>
+16.07.03 21:10:29 << 250 2.1.5 OK o7sm4041037lfg.45 - gsmtp<EOL>
+16.07.03 21:10:29 >> DATA<EOL>
+16.07.03 21:10:29 << 354  Go ahead o7sm4041037lfg.45 - gsmtp<EOL>
+16.07.03 21:10:29 >> Date: Sun, 3 Jul 2016 21:10:29 +0300<EOL>
+16.07.03 21:10:29 >> To: vladislavsgeidans@inbox.lv<EOL>
+16.07.03 21:10:29 >> Subject: Temats: пылждвоатпдлывотпдлоывап || E-Mail: офаырвадлофытвадлофтыва<EOL>
+16.07.03 21:10:29 >> X-PHP-Originating-Script: 0:support.php<EOL>
+16.07.03 21:10:29 >> From: pisalka30@gmail.com<EOL>
+16.07.03 21:10:29 >> Reply-To: pisalka30@gmail.com<EOL>
+16.07.03 21:10:29 >> MIME-Version: 1.0<EOL>
+16.07.03 21:10:29 >> Content-type: text/html; charset=iso-8859-1<EOL>
+16.07.03 21:10:29 >> X-Mailer: PHP/5.5.34<EOL>
+16.07.03 21:10:29 >> <EOL>
+16.07.03 21:10:29 >> <p style="text-align: center;"><em><strong>ылвджаоптывлоаптдылвоатпывап</strong></em></p><EOL>
+16.07.03 21:10:29 >> .<EOL>
+16.07.03 21:10:31 << 250 2.0.0 OK 1467569431 o7sm4041037lfg.45 - gsmtp<EOL>
+16.07.03 21:10:31 >> QUIT<EOL>
+16.07.03 21:10:31 << 221 2.0.0 closing connection o7sm4041037lfg.45 - gsmtp<EOL>
+16.07.03 21:10:31 ** Disconnected.
+16.07.03 21:10:31 ** Disconnected.
+16.07.03 21:10:31 ** Disconnected.

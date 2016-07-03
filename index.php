@@ -21,8 +21,8 @@ if(isset($_POST['submit']))
 ?>
 <html>
 	<head>
- 		<title>WikiCar</title>
  		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
  		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="shortcut icon" href="img/favico.png" type="image/png">
  		<link href='https://fonts.googleapis.com/css?family=Fira+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -37,19 +37,27 @@ if(isset($_POST['submit']))
 				<?php 
 					include "global/header.html";
  				?>
+ 				<?php 
 
- 				<div class="imgindex">
- 					<div class="imgtext">
-						<div class="ftext">
-							WikiCar - всё о авто!
-						</div>
+ 				if ($_GET['page'] == "news")
+ 				{
+ 					echo '
+ 						<div class="imgindex">
+			 					<div class="imgtext">
+									<div class="ftext">
+										WikiCar - всё о авто!
+									</div>
 
-						<div class="stext">
-							Здесь вы найдете все авто, которые вас интересуют
-						</div>
-					</div>
-				</div>
+									<div class="stext">
+										Здесь вы найдете все авто, которые вас интересуют
+									</div>
+								</div>
+							</div>
+							<br>';
+ 				}
 
+
+				?>
 
  				<div class="content-wrap">
 					<section>
@@ -78,7 +86,7 @@ if(isset($_POST['submit']))
 							
 							else
 							{
-								include_once "page/news.php";
+								include_once "404.html";
 							}
 
 						?>

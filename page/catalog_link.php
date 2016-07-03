@@ -1,4 +1,4 @@
-
+<title>Каталог - WikiCar</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="../css/tableinfo.css">
 <link rel="stylesheet" type="text/css" href="../css/index.css">
@@ -9,6 +9,7 @@ if(isset($_GET['marka'])) $marka = $_GET['marka'];
 
 if (!isset($marka)) { 
 	//* ССЫЛКИ НА МАРКИ *//
+    echo "<a href='index.php?page=news'><img src='img/back.png' width='30px'></a>";
 	echo "<div class='marknames'>";
 	echo "<div class='marknamesblock'>";
 	$query = "SELECT * FROM mark WHERE mark_name LIKE 'A%' ";
@@ -254,6 +255,7 @@ else
 	if (!isset($model)) 
 	{ 	
 		echo "<div class='modellinks'>";
+        echo "<a href='index.php?page=cataloglink'><img src='img/back.png' width='30px'></a>";
 		echo "<p style='font-weight: bold; font-size: 20; color: #5A5454;'>Модели авто: </p>";
 		$query = "SELECT * FROM car_model WHERE marka_id = ".$marka."";
 		if ($result = mysqli_query($link, $query)) 
@@ -273,7 +275,8 @@ else
 		if ($result = mysqli_query($link, $query)) 
 		{
     		while ($row = mysqli_fetch_assoc($result)) 
-    		{ 
+    		{
+            echo '<a href="index.php?page=cataloglink&marka='.$marka.'"><img src="img/back.png" width="30px"></a></div>'; 
 	 		echo '
             		<center>
 					<p style="font-weight: bold;"><p style="font-family: Fira Sans; font-size: 20; font-weight: bold; color: #5a5454;"> '.$row['mark_name'].' '.$row['model_name'].' </p></center><br><br><br>

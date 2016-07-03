@@ -1,47 +1,44 @@
 <head>
+<title>Обратная связь - WikiCar</title>
 <link rel="stylesheet" type="text/css" href="css/index.css">
+<meta charset="utf-8">
 <script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
 <script type="text/javascript">
-	tinymce.init({
-    	selector: "textarea"
- 	});
+tinymce.init({
+    selector: "textarea"
+ });
 </script>
-
-<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 		<form method="POST">		
-
-			<text style="color: #5A5454; font-family: Fira Sans; font-size: 14;">Ваш E-mail адрес:</text><br><input type="text" name="email"><br>	
-			<hr>
-			<text style="color: #5A5454; font-family: Fira Sans; font-size: 14;">Тема:</text><br><input type="text" name="temats"><br>
-			<text style="color: #5A5454; font-family: Fira Sans; font-size: 14;">Текст сообщения:</text><br>
-			<textarea name="text"></textarea><br>
+		<a href='index.php?page=news'><img src='img/back.png' width='30px'></a><br><br>
+			<input placeholder="Введите сюда E-mail!" type="text" name="email"><br>
+			<input placeholder="Введите сюда тему!" type="text" name="temats"><br>
+			<textarea class= "textarea" placeholder="Введите сюда отзыв!" name="mess" rows="15" cols="100%"></textarea><br>
 			
-			<input type="submit" name="sendmail" value="Отправить" location.href='C:\Apache24\htdocs\diplom\index.php'>
+			<input type="submit" name="sendmail" value="Отправить" style="float: right;" location.href='C:\Apache24\htdocs\diplom\index.php'>
 		</form>
 
 
 
 <?php
 
-include "includes/connect.php";
+		$temats = $_POST["temats"];
+		$email = $_POST["email"];
+		$texts = $_POST["mess"];
 
-if(isset($_POST["sendmail"]))
-{
-	$email = $_POST['email'];
-	$temats = $_POST['temats'];
-	$text = $_POST['text'];
+		if (isset($_POST['sendmail'])) {
+			if ((isset($temats)) and (isset($email)) and (isset($texts))) {
+				$to       = 'vladislavsgeidans@inbox.lv';
+				$subject  = 'Temats: '.$temats.' || E-Mail: '.$email;
+				$message  = $_POST["mess"];
+				$headers  = 'From: pisalka30@gmail.com' . "\r\n" .
+            				'Reply-To: pisalka30@gmail.com' . "\r\n" .
+            				'MIME-Version: 1.0' . "\r\n" .
+            				'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
+            				'X-Mailer: PHP/' . phpversion();
+				mail($to, $subject, $message, $headers);
+				header('Location: index.php?page=news');
+			}
+		}
 
-	$insert_sql = "INSERT INTO mails (email_cl, temats_m, text_m) 
-					VALUES ('{$email}', '{$temats}', '{$text}')";
-						if(! mysqli_query($link, $insert_sql))
-						{
-    						echo(mysqli_error($link));
-						}	
-						else 
-						{
-							header('Location: index.php');
-							exit();
-						}	
-} 
 ?>

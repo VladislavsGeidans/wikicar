@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="../css/index.css">
-
+<title>История марок авто - WikiCar</title>
 <div class="historycar">
 
 	<?php 
@@ -10,6 +10,7 @@
 		$query = "SELECT * FROM history_mark ";
 						if ($result = mysqli_query($link, $query)) 
 						{
+							echo "<a href='index.php?page=news'><img src='img/back.png' width='30px'></a>";
 							echo ("<p style='font-family: Fira Sans; font-size: 14; color: #5A5454;'>Марки авто:</p> <br>");
     						while ($row = mysqli_fetch_assoc($result)) 
     						{
@@ -27,11 +28,11 @@
 						{
     						while ($row = mysqli_fetch_assoc($result)) 
     						{
+    							echo "<a href='index.php?page=history'><img src='img/back.png' width='30px'></a>";
         						echo ("<p style='font-family: Fira Sans; font-size: 14;'>". $row["history"]."</p><br>");
     						}
     						mysqli_free_result($result);
-			}
-echo ("<br><a href='index.php?page=history'>Назад</a>");			
+			}		
 		}
 		
 	?>

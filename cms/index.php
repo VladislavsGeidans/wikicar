@@ -1,47 +1,80 @@
-<?php 
-	error_reporting( E_ERROR );
-	header( 'Content-Type: text/html; charset=utf-8' );
-	session_start();
-	if(!$_SESSION['admin'])
-	{
-		header("Location: login.php");
-		exit;
-	}
-?>
-<!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/admin.css">
-	 		<link href='https://fonts.googleapis.com/css?family=Fira+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<meta charset="utf-8">
-	<title>ADMIN PANEL</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Новости</title>
+<link rel="StyleSheet" type="text/css" href="news.css">
 </head>
-<body>
-	<div class="general">
-		<?php
-			include "global/container.html";
-		?>
+<?php
+  // Выставляем уровень обработки ошибок (http://www.softtime.ru/info/articlephp.php?id_article=23)
+  Error_Reporting(E_ALL & ~E_NOTICE); 
 
-		<div class="text">
-			<?php
-				if ($_GET['pages'] == "addauto")
-				{
-					include_once "pages/add-auto.php";
-				}
-				else if ($_GET['pages'] == "addnews")
-				{
-					include_once "pages/add-news.php";
-				}
-				else if ($_GET['pages'] == "mail")
-				{
-					include_once "pages/mailsupport.php";
-				}	
-				else
-				{
-					
-				}
-			?>
-		</div>
-	</div>
-</body>
-</html>
+  // Этот файл выводит первые $pnumber новостей
+  // Устанавлинваем соединение с базой данных
+  require_once("config.php");
+?>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<p class="zagblock">НОВОСТИ</p>
+<?php
+  // Выясняем общее количество новостей в базе данных, для того чтобы
+  // правильно отображать ссылки на последующие новости.
+  $tot = mysql_query("SELECT count(*) FROM news WHERE hide='show' AND putdate <= NOW()");
+  if ($tot)
+  {
+    $total = mysql_result($tot,0);
+    // Если в базе новостей меньше чем $pnumber
+    // выводим их без вывода ссылки "Все новости".
+    if($pnumber < $total) echo "<p class='linkblock'><a href=news.php class='linkblock'>Все новости</a>";
+  }
+  else puterror("Ошибка при обращении к блоку новостей");
+  // Запрашиваем все видимые новости, т.е. те, у которых в базе данных hide='show',
+  // если это поле будет равно 'hide', новость не будет отображаться на странице
+  //$query = "SELECT SUBSTRING(body,1,500) AS body FROM news WHERE hide='show' AND putdate <= NOW()
+   $query = "SELECT * FROM news WHERE hide='show' AND putdate <= NOW()
+            ORDER BY putdate DESC
+            LIMIT $pnumber";
+  $new = mysql_query($query);
+  if(!$new) puterror("Ошибка при обращении к блоку новостей");
+  if(mysql_num_rows($new) > 0)
+  {
+    while($news = mysql_fetch_array($new))
+    {
+	$text_oreg = $news['body']; 
+	$simbol = mb_strlen($text_oreg, 'utf-8'); 
+	if ($simbol <= 500)
+	{
+		echo "<p class=newsblock>".$news['body']."";
+	}
+	else if ($simbol > 500)
+	{
+		echo "<p class=newsblock>".$news['body']."";
+		echo "<a style='text-decoration: none; color: red;' href=news.php?id_news=".$news['id_news']."><text> [ ... ]</text></a></p>";
+	}
+     
+    }
+  }
+?>
+<br><br>
+
+
+
+
+
+
+
+
+
+<!--
+ // Выводим заголовок новости
+      echo "<p class=newsblockzag><b>".$news['name']."</b></p>";
+      // Формируем анонс
+      // Переменная $numchar содержит примерное
+      // количество символов в анонсе
+      $pos = strpos(substr($news['body'],$numchar), " ");
+      // Если новость длинная, то выводим троеточие...
+      if(strlen($news['body'])>$numchar) $srttmpend = "";
+      else $strtmpend = "";
+      // Выводим анонс
+      echo "<p class=newsblock>".substr($news['body'], 500);
+      echo "<a style='text-decoration: none; color: red;' href=news.php?id_news=".$news['id_news']."><text> [ ... ]</text></a></p>";
+	  
+	  -->

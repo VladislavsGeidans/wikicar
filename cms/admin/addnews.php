@@ -1,12 +1,5 @@
+<meta charset="utf-8">
 <?php
-  ///////////////////////////////////////////////////
-  // Блок "Новости"
-  // 2003-2006 (C) IT-студия SoftTime (http://www.softtime.ru)
-  // Симдянов И.В. (simdyanov@softtime.ru)
-  // Голышев С.В. (softtime@softtime.ru)
-  ///////////////////////////////////////////////////
-  // Выставляем уровень обработки ошибок (http://www.softtime.ru/info/articlephp.php?id_article=23)
-  Error_Reporting(E_ALL & ~E_NOTICE); 
 
   // Устнавливаем соединение с базой данных
   include "../config.php";
@@ -24,18 +17,14 @@
     if (strtolower((substr($_POST['url'], 0, 7))!="http://") && (strtolower(substr($_POST['url'], 0, 7))!="ftp://")) $url="http://".$_POST['url'];
   } 
   // Проверяем время
-  if(!preg_match("|^[\d]+$|",$_POST['date_year'])) puterror("Ошибка при обращении к блоку новостей");
-  if(!preg_match("|^[\d]+$|",$_POST['date_month'])) puterror("Ошибка при обращении к блоку новостей");
-  if(!preg_match("|^[\d]+$|",$_POST['date_day'])) puterror("Ошибка при обращении к блоку новостей");
-  if(!preg_match("|^[\d]+$|",$_POST['date_hour'])) puterror("Ошибка при обращении к блоку новостей");
-  if(!preg_match("|^[\d]+$|",$_POST['date_minute'])) puterror("Ошибка при обращении к блоку новостей");
+  
 
   // Заменяем одинарные кавычки обратными, чтобы избежать конфликта
   // при добавлении информации в таблицу
   if (!get_magic_quotes_gpc())
   {
-    $_POST['name'] = mysqli_real_escape_string($_POST['name']);
-    $_POST['body'] = mysqli_real_escape_string($_POST['body']);
+    $_POST['name'] = mysql_real_escape_string($_POST['name']);
+    $_POST['body'] = mysql_real_escape_string($_POST['body']);
   }
 
   // Если поле выбора картинки не пустое - закачиваем её на сервер
