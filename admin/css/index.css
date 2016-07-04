@@ -22,11 +22,16 @@ li {
 	width: 100%;
 }
 
+.logo {
+	position: absolute;
+	left: 1.5%;
+	top: 9.5px;
+}
 .nav {
 	display: flex;
 	-webkit-flex-flow: row wrap;
 	justify-content: flex-end;
-	background: #5A5454;
+	background: #838B8B;
 	list-style-type: none;
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 12;
@@ -44,13 +49,13 @@ li {
 	font-family: 'Fira Sans';
 	font-size: 12;
 	-webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  	transform: translateZ(0);
+  	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .nav a:hover {
-  background: #3e3a3a;
-  color: #fff;
+  background: #FFF;
+  color: #838B8B;
 }
 
 .pages {
@@ -62,8 +67,7 @@ li {
 }
 
 .addlink {
-	margin-bottom: 15px; 
-	padding: 5px;
+	margin-bottom: 10px; 
 }
 
 
@@ -72,6 +76,69 @@ li {
 }
 
 .table td {
-	border: 1px solid #DCDCDC;
+	border: 1px solid #838B8B;
 	padding: 5px;
+}
+
+input[type=submit] {
+	width: auto;
+	padding: 10px;
+	background: #838B8B;
+	color: #FFF;
+	border: 1px solid #838B8B;
+	cursor: pointer;
+	font-family: 'Fira Sans';
+	font-size: 12px;
+	transition: 0.3s;
+	margin: 5px;
+}
+
+input[type=submit]:hover {
+	background: #FFF;
+	color: #838B8B;
+	border: 1px solid #838B8B;
+}
+
+#modal {
+	display: none;
+	position: fixed;
+	top: 20%;
+	left: 20%;
+	width: auto;
+	height: auto;
+	background: #fff;
+	border: 1px solid #838B8B;
+	box-shadow:  0px 1px 100px 100px rgba(0,0,0,0.1);
+	padding: 20px;
+	z-index: 99999;
+}
+
+.divButton {
+	text-align: center;
+	width: 100px;
+	height: 30px;
+	background: lightblue;
+	box-shadow: 0 0 5px;
+}
+	
+.divButton:hover {
+	cursor: pointer;
+}
+
+.del {
+	position: relative;
+	left: 97%;
+	width: 30px;
+	height: 30px;
+	background: url("../../img/back.png");
+	background-size: 30px;
+}
+
+.del:hover {
+	cursor: pointer;
+}
+
+.addnewsform {
+	font-size: 12px;
+	font-family: 'Fira Sans';
 }

@@ -14,6 +14,9 @@
 <body>
 	<div class="header">
 		<div class="nav">
+			<div class="logo">
+				<img src="../img/logo_header.png" width="80px" float="left">
+			</div>
 			<li><a href="index.php?page=news">Новости</a></li>
 			<li><a href="index.php?page=history">Истории авто</a></li>
 			<li><a href="index.php?page=auto">Авто</a></li>
