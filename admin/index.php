@@ -1,14 +1,22 @@
 <?php 
+	header( 'Content-Type: text/html; charset=utf-8' );
+	session_start();
+	if(!$_SESSION['admin']){
+		header("Location: login.php");
+		exit;
+	}
 	error_reporting( E_ERROR );
 	include ("../includes/config.php");
 	include ("../includes/connect.php");
-	include ("../includes/function.php");
+	include ("function/function.php");
+	header('Content-Type: text/html; charset=utf-8');
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="shortcut icon" href="../img/adminfavi.png" type="image/png">
 	<link href='https://fonts.googleapis.com/css?family=Fira+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -20,6 +28,7 @@
 			<li><a href="index.php?page=news">Новости</a></li>
 			<li><a href="index.php?page=history">Истории авто</a></li>
 			<li><a href="index.php?page=auto">Авто</a></li>
+			<li><a href="login.php">Выйти</a></li>
 		</div>
 	</div>
 	<div class="pages">

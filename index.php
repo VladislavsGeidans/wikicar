@@ -39,7 +39,7 @@ if(isset($_POST['submit']))
  				?>
  				<?php 
 
- 				if ($_GET['page'] == "news")
+ 				if (($_GET['page'] == "news") xor ($_GET['pages'] == "1"))
  				{
  					echo '
  						<div class="imgindex">

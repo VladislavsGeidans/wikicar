@@ -79,13 +79,13 @@ include ("/../includes/connect.php");
 						$querys = "SELECT * FROM news";
 						if ($results = mysqli_query($link, $querys)) 
 						{
-							$i = 7;
+							$i = 0;
 							while ($rows = mysqli_fetch_assoc($results)) 
 							{
 					   			$i++;
 							}
 						}
-						$i = intval($i / $count);
+						$i = ceil($i / $count);
 						for ($d = 1; $d <= $i; $d++) 
 						{
 					   		echo "<a class='newslink' href='index.php?page=news&pages=".$d."'>".$d."</a><span> </span>";
