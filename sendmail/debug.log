@@ -286,3 +286,51 @@
 16.07.03 21:10:31 ** Disconnected.
 16.07.03 21:10:31 ** Disconnected.
 16.07.03 21:10:31 ** Disconnected.
+16.07.08 13:18:57 ** --- MESSAGE BEGIN ---
+16.07.08 13:18:57 ** To: vladislavsgeidans@inbox.lv
+16.07.08 13:18:57 ** Subject: Temats: fasdfasdfasdfasdfasdfasd || E-Mail: asdfasdfasdfasdfasdfasdfasdf
+16.07.08 13:18:57 ** X-PHP-Originating-Script: 0:support.php
+16.07.08 13:18:57 ** From: pisalka30@gmail.com
+16.07.08 13:18:57 ** Reply-To: pisalka30@gmail.com
+16.07.08 13:18:57 ** MIME-Version: 1.0
+16.07.08 13:18:57 ** Content-type: text/html; charset=iso-8859-1
+16.07.08 13:18:57 ** X-Mailer: PHP/5.5.37
+16.07.08 13:18:57 ** 
+16.07.08 13:18:57 ** <p>fasdfasdfasdfasdfasdfasdf</p>
+16.07.08 13:18:57 ** --- MESSAGE END ---
+16.07.08 13:18:57 ** Connecting to smtp.gmail.com:465
+16.07.08 13:18:58 ** Connected.
+16.07.08 13:18:58 << 220 smtp.gmail.com ESMTP s77sm2981052lfi.16 - gsmtp<EOL>
+16.07.08 13:18:58 >> EHLO localhost<EOL>
+16.07.08 13:18:58 << 250-smtp.gmail.com at your service, [85.254.75.173]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+16.07.08 13:18:58 ** Authenticating as pisalka30@gmail.com
+16.07.08 13:18:58 >> AUTH LOGIN<EOL>
+16.07.08 13:18:58 << 334 VXNlcm5hbWU6<EOL>
+16.07.08 13:18:58 >> cGlzYWxrYTMwQGdtYWlsLmNvbQ==<EOL>
+16.07.08 13:18:58 << 334 UGFzc3dvcmQ6<EOL>
+16.07.08 13:18:58 >> VmE1cHJpZWthMTIz<EOL>
+16.07.08 13:18:58 << 235 2.7.0 Accepted<EOL>
+16.07.08 13:18:58 >> MAIL FROM: <pisalka30@gmail.com><EOL>
+16.07.08 13:18:58 << 250 2.1.0 OK s77sm2981052lfi.16 - gsmtp<EOL>
+16.07.08 13:18:58 >> RCPT TO: <vladislavsgeidans@inbox.lv><EOL>
+16.07.08 13:18:58 << 250 2.1.5 OK s77sm2981052lfi.16 - gsmtp<EOL>
+16.07.08 13:18:58 >> DATA<EOL>
+16.07.08 13:18:58 << 354  Go ahead s77sm2981052lfi.16 - gsmtp<EOL>
+16.07.08 13:18:58 >> Date: Fri, 8 Jul 2016 13:18:58 +0300<EOL>
+16.07.08 13:18:58 >> To: vladislavsgeidans@inbox.lv<EOL>
+16.07.08 13:18:58 >> Subject: Temats: fasdfasdfasdfasdfasdfasd || E-Mail: asdfasdfasdfasdfasdfasdfasdf<EOL>
+16.07.08 13:18:58 >> X-PHP-Originating-Script: 0:support.php<EOL>
+16.07.08 13:18:58 >> From: pisalka30@gmail.com<EOL>
+16.07.08 13:18:58 >> Reply-To: pisalka30@gmail.com<EOL>
+16.07.08 13:18:58 >> MIME-Version: 1.0<EOL>
+16.07.08 13:18:58 >> Content-type: text/html; charset=iso-8859-1<EOL>
+16.07.08 13:18:58 >> X-Mailer: PHP/5.5.37<EOL>
+16.07.08 13:18:58 >> <EOL>
+16.07.08 13:18:58 >> <p>fasdfasdfasdfasdfasdfasdf</p><EOL>
+16.07.08 13:18:58 >> .<EOL>
+16.07.08 13:18:59 << 250 2.0.0 OK 1467973139 s77sm2981052lfi.16 - gsmtp<EOL>
+16.07.08 13:18:59 >> QUIT<EOL>
+16.07.08 13:18:59 << 221 2.0.0 closing connection s77sm2981052lfi.16 - gsmtp<EOL>
+16.07.08 13:18:59 ** Disconnecting from smtp.gmail.com:465
+16.07.08 13:18:59 ** Disconnected.
+16.07.08 13:18:59 ** Disconnected.
