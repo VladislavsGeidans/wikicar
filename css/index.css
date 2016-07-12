@@ -1,5 +1,6 @@
 #base {
 	margin: 0;
+	font-family: 'Fira Sans';
 }
 
 
@@ -48,10 +49,28 @@ body > .container {
 }
 
 .navigation a:hover {
-  background: #3e3a3a;
+  background: rgba(0,0,0,0.4);
   color: #fff;
 }
 
+.navigation_in{
+	text-decoration: none;
+	display: block;
+	padding: 1em;
+	color: white;
+	display: inline-block;
+	transition-duration: 0.2s;
+	font-family: 'Fira Sans';
+	font-size: 12;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.navigation_in:hover {
+  background: #3e3a3a;
+  color: #fff;
+  cursor: pointer;
+}
 
 /*CONTAINERS*/
 .content-wrap {
@@ -618,9 +637,10 @@ input[type=submit]:hover {
 }
 
 .loginform {
+	display: none;
 	margin: 0 auto;
 	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	box-shadow:  0px 28px 56px -28px #5A5454;
 	background: #fff;
 	width: 300px;
 	height: 300px;
@@ -628,4 +648,19 @@ input[type=submit]:hover {
 	top: 10px;
 	left: 35%;
 	padding: 10px;
+}
+
+.x_element{
+	position: absolute;
+	top: -10;
+	right: 10;
+}
+.x_element:hover{
+	cursor: pointer;
+}
+
+.profile_name {
+	font-size: 20px;
+	font-family: 'Fira Sans';
+
 }

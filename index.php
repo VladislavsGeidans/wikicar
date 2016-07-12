@@ -33,7 +33,7 @@ session_start();
 	<div class="container clearfix">
 			<div id="top">
 				<?php 
-					include "global/header.html";
+					include "global/header.php";
  				?>
 
  				<?php 
@@ -46,6 +46,7 @@ session_start();
     						if (!isset($_SESSION["login"]))
     						{
     							echo '	<center>
+    										<p onclick="clickX();" class="x_element">&#10006;</p>
     										<h3>Войти на сайт</h3>
 		    								<form action="page/testreg.php" method="post">
 												<p style="font-size: 12px;">Логин: <input type="text" name="login_name_in"><br></p>
@@ -57,16 +58,7 @@ session_start();
 											</form>
 										</center>';
     						} 
-    						else 
-    						{
-    							echo '<center>Вы вошли как <text style="font-weight: bold;">'.$_SESSION['login'].'</text>';
-    							echo '<form method="post"><input type="submit" name="out" value="Выйти"></form></center>';
-    							if (isset($_POST['out']))
-    							{
-    								session_destroy();
-    								header("Location: index.php?page=news");
-    							}
-    						}
+
 
     			  echo '</div></div><br>';
  				}
@@ -102,6 +94,16 @@ session_start();
 								include_once "page/reg.php";
 							}
 
+							else if ($page == "profile")
+							{
+								include_once "page/profile.php";
+							}
+
+							else if ($page == "outsession")
+							{
+								include_once "page/outsession.php";
+							}
+
 
 							else if ($page == "support")
 							{
@@ -132,6 +134,15 @@ session_start();
 			</div>
 	</div>
 </div>
+
+<script>
+	function clickIn(){
+		document.getElementsByClassName("loginform")[0].style.display = "block";
+	}	
+	function clickX(){
+		document.getElementsByClassName("loginform")[0].style.display = "none";
+	}
+</script>
 
 </body>
 

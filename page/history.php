@@ -6,8 +6,9 @@
 	if(isset($_GET['hist'])) $hist_link = $_GET['hist'];
 	
 	
-	if (!isset($hist_link)){
-		$query = "SELECT * FROM history_mark ";
+	if (!isset($hist_link))
+	{
+						$query = "SELECT * FROM history_mark ";
 						if ($result = mysqli_query($link, $query)) 
 						{
 							echo "<a href='index.php?page=news'><img src='img/back.png' width='30px'></a>";
@@ -19,9 +20,9 @@
     						mysqli_free_result($result);
 						}
 						
-		}
-		else	
-		{
+	}
+	else	
+	{
 						
 			$query = "SELECT * FROM history_mark WHERE id=".$hist_link." limit 1";
 						if ($result = mysqli_query($link, $query)) 
@@ -33,7 +34,7 @@
     						}
     						mysqli_free_result($result);
 			}		
-		}
+	}
 		
 	?>
 
