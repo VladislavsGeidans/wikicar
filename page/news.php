@@ -67,7 +67,7 @@ include ("/../includes/connect.php");
 								}
 				echo '
 							</td>
-						</tr>							
+						</tr><br><br>							
 					</table>
 					<br><br><br>
 				';

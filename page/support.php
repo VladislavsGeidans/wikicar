@@ -12,7 +12,7 @@ tinymce.init({
 		<form method="POST">		
 		<a href='index.php?page=news'><img src='img/back.png' width='30px'></a><br><br>
 			<input placeholder="Введите сюда E-mail!" type="text" name="email"><br>
-			<input placeholder="Введите сюда тему!" type="text" name="temats"><br>
+			<input placeholder="Введите сюда тему!" type="text" name="temats"><br><br>
 			<textarea class= "textarea" placeholder="Введите сюда отзыв!" name="mess" rows="15" cols="100%"></textarea><br>
 			
 			<input type="submit" name="sendmail" value="Отправить" style="float: right;" location.href='C:\Apache24\htdocs\diplom\index.php'>

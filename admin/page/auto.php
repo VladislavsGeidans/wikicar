@@ -1,6 +1,9 @@
 <meta charset="utf-8">
 <title>Авто - AdminPanel</title>
+<script src="../js/jquery-3.0.0.js" type="text/javascript"></script>
+<script src="../js/jquery.maskedinput.js" type="text/javascript"></script>
 <script>
+
 	/*Модальное окно*/
 		function onClickNewsAddForm(){
 			document.getElementById("modaladdcar").style.display = "block";
@@ -18,6 +21,17 @@
 	/* Уведомление для ошибки */
  		setTimeout(function(){$('.nevibranno').fadeOut('fast')},3000); 
  	/* --- */
+
+ 	/* Маски для input */
+ 		jQuery(function($){
+   			$("#moshnost").mask("999/9999",{placeholder:" "});
+		});
+
+ 		jQuery(function($){
+   			$("#krutmoment").mask("999/9999",{placeholder:" "});
+		});
+ 	/* --- */ 
+ 	
 </script>
 <div class="addlink">
 	<div onclick="onClickNewsAddForm();">
@@ -234,8 +248,8 @@ echo "Размер файла не должен превышать 512Кб";
 							Высота, мм: <input type="text" name="visota" /><br /><br /><hr />
 							Тип двигателя: <input type="text" name="typedvig" /><br /><br />
 							Обьем двигателя, куб. см: <input type="text" name="obdvig" /><br /><br />
-							Мощность, л.с./об мин: <input type="text" name="moshnost" /><br /><br />
-							Крутящий момент, Нм/об мин: <input type="text" name="krutmoment" /><br /><br />
+							Мощность, л.с./об мин: <input id="moshnost" type="text" name="moshnost" /><br /><br />
+							Крутящий момент, Нм/об мин: <input id="krutmoment" type="text" name="krutmoment" /><br /><br />
 							Расположение двигателя: <select name="dvigsite">
 														<option value="" disabled selected> --- Выберите расположение двигателя --- </option>
 														<option value="сзади">сзади</option>

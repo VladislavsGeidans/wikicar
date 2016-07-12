@@ -6,18 +6,7 @@ include ("includes/function.php");
 header( 'Content-Type: text/html; charset=utf-8' );
 
 session_start();
-$admin = 'root';
-$pass = 'root';
-if(isset($_POST['submit'])) 
-{
-	if($admin == $_POST['user'] AND $pass == $_POST['pass']) 
-	{
-		$_SESSION['admin'] = $admin;
-		header("Location: admin.php");
-		exit;
-	}
-	else ?> <div class="loginfail"><p>Логин или пароль неверны!</p></div><br> <?php
-}
+
 ?>
 <html>
 	<head>
@@ -27,33 +16,59 @@ if(isset($_POST['submit']))
 		<link rel="shortcut icon" href="img/favico.png" type="image/png">
  		<link href='https://fonts.googleapis.com/css?family=Fira+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
  		<script type="text/javascript" src="script.js"></script>
+ 		<script type="text/javascript">
+ 					function onClickLogIn(){
+						document.getElementById("login").style.display = "block";
+					}
+					function clickExitLogIn(){
+						document.getElementById("login").style.display = "none";
+					}
+ 		</script>
+
 
 
 
 	</head>
-	<body class="base">
+	<body id="base">
 	<div class="container clearfix">
 			<div id="top">
 				<?php 
 					include "global/header.html";
  				?>
+
  				<?php 
+
 
  				if (($_GET['page'] == "news") xor ($_GET['pages'] == "1"))
  				{
- 					echo '
- 						<div class="imgindex">
-			 					<div class="imgtext">
-									<div class="ftext">
-										WikiCar - всё о авто!
-									</div>
+ 				  echo '<div class="imgindex">';
+                  echo '<div class="loginform">';
+    						if (!isset($_SESSION["login"]))
+    						{
+    							echo '	<center>
+    										<h3>Войти на сайт</h3>
+		    								<form action="page/testreg.php" method="post">
+												<p style="font-size: 12px;">Логин: <input type="text" name="login_name_in"><br></p>
+												<p style="font-size: 12px;">Пароль: <input type="password" name="passw_in"><br></p>
+												<input style="font-size: 12px;" type="submit" value="Войти" name="submit_in"><br><br>
 
-									<div class="stext">
-										Здесь вы найдете все авто, которые вас интересуют
-									</div>
-								</div>
-							</div>
-							<br>';
+												<a href="index.php?page=registration">Регистрация</a><br>
+												<a href="#">Забыли пароль?</a>
+											</form>
+										</center>';
+    						} 
+    						else 
+    						{
+    							echo '<center>Вы вошли как <text style="font-weight: bold;">'.$_SESSION['login'].'</text>';
+    							echo '<form method="post"><input type="submit" name="out" value="Выйти"></form></center>';
+    							if (isset($_POST['out']))
+    							{
+    								session_destroy();
+    								header("Location: index.php?page=news");
+    							}
+    						}
+
+    			  echo '</div></div><br>';
  				}
 
 
@@ -62,24 +77,33 @@ if(isset($_POST['submit']))
  				<div class="content-wrap">
 					<section>
  						<div class="content">
-						
-						<?php
-							if ($_GET['page'] == "news")
+
+						<?php 
+
+							$page = $_GET['page'];
+
+							if ($page == "news")
 							{
 								include_once "page/news.php";
 							}
 
-							else if ($_GET['page'] == "history")
-							{
-								include_once "page/history.php";
-							}
-
-							else if ($_GET['page'] == "cataloglink")
+							else if ($page == "cataloglink")
 							{
 								include_once "page/catalog_link.php";
 							}
 
-							else if ($_GET['page'] == "support")
+							else if ($page == "history")
+							{
+								include_once "page/history.php";
+							}
+
+							else if ($page == "registration")
+							{
+								include_once "page/reg.php";
+							}
+
+
+							else if ($page == "support")
 							{
 								include_once "page/support.php";
 							}
